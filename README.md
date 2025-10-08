@@ -32,7 +32,7 @@ It focuses on building hands-on cloud experience while managing cost effectively
 | Storage | Amazon S3 |
 | CDN | Amazon CloudFront |
 | IAM Management | AWS Identity and Access Management |
-| DNS (Optional) | Amazon Route 53 |
+| DNS  | Amazon Route 53 |
 | CLI / Automation | AWS CLI |
 | IDE / Editor | Visual Studio Code |
 | OS | Ubuntu Linux |
