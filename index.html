@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Esther Domfeh | Cloud & DevOps Engineer</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Fira Code', monospace;
+      background-color: #0d1117;
+      color: #c9d1d9;
+      position: relative;
+      overflow-x: hidden;
+    }
+    .accent {
+      color: #58a6ff;
+    }
+    .card {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 10px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 15px rgba(56, 139, 253, 0.2);
+    }
+    .link-hover:hover {
+      color: #58a6ff;
+    }
+
+    /* 🌌 Star Background Styles */
+    .stars {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+    }
+
+    .star {
+      position: absolute;
+      background: white;
+      width: 2px;
+      height: 2px;
+      border-radius: 50%;
+      opacity: 0.8;
+      animation: twinkle 3s infinite ease-in-out;
+    }
+
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.2; }
+      50% { opacity: 1; }
+    }
+  </style>
+</head>
+
+<body class="min-h-screen flex flex-col">
+  <!-- 🌠 Star Background -->
+  <div class="stars"></div>
+
+  <!-- Navigation -->
+  <header class="py-4 border-b border-gray-700 sticky top-0 bg-[#0d1117]/90 backdrop-blur z-10">
+    <div class="max-w-6xl mx-auto flex justify-between items-center px-4">
+      <h1 class="text-xl font-bold accent">esther.dev</h1>
+      <nav class="space-x-6 text-gray-400">
+        <a href="#about" class="link-hover">About</a>
+        <a href="#projects" class="link-hover">Projects</a>
+        <a href="#contact" class="link-hover">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+   <!-- Hero with animated particle background -->
+<section class="relative text-center py-20 bg-gray-900 overflow-hidden z-10">
+  <div id="particles-js" class="absolute inset-0"></div>
+  
+  <div class="relative z-10 max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-8 px-6">
+    
+    <!-- Profile Image -->
+    <img src="img/myPicture.jpg" alt="esther's profile pic"
+         class="w-40 h-40 rounded-full border-4 border-cyan-400 shadow-lg object-cover">
+    
+    <!-- Text Content -->
+    <div>
+      <h2 class="text-5xl font-bold text-white mb-4">Hi, I’m Esther Domfeh</h2>
+      <p class="text-lg text-gray-300">
+        Aspiring <span class="text-cyan-300">Cloud & DevOps Engineer</span>  <br />
+        I design automated, scalable, and secure systems.
+      </p>
+    </div>
+  </div>
+</section>
+
+  <!-- About -->
+  <section id="about" class="max-w-4xl mx-auto px-6 py-16 z-10 relative">
+    <h3 class="text-2xl font-bold mb-6 accent">About Me</h3>
+    <p class="text-gray-400 leading-relaxed">
+      I'm a Computer Science Master's student with a deep interest in <span class="accent">cloud computing, CI/CD pipelines, and DevOps culture</span>.  
+      My goal is to bridge the gap between development and operations by using automation tools like <span class="accent">Terraform, Docker, and Jenkins</span> to create reliable and efficient cloud systems.  
+      <br><br>
+      I'm currently preparing for the <span class="accent">AWS Certified Cloud Practitioner</span> certification and actively building hands-on projects to strengthen my real-world skills.
+    </p>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="bg-[#161b22] py-20 relative z-10">
+    <div class="max-w-5xl mx-auto px-6">
+      <h3 class="text-2xl font-bold mb-10 accent text-center">Projects</h3>
+      <div class="grid md:grid-cols-2 gap-6">
+        
+        <div class="card p-6">
+          <h4 class="text-xl font-semibold mb-2 text-white">AWS S3 + CloudFront Portfolio Hosting</h4>
+          <p class="text-gray-400 mb-3">
+            Deployed this portfolio site using Amazon S3 for hosting and CloudFront for global distribution, implementing IAM policies for secure public access.
+          </p>
+          <a href="#" class="accent hover:underline">View on GitHub →</a>
+        </div>
+
+        <div class="card p-6">
+          <h4 class="text-xl font-semibold mb-2 text-white">Terraform Infrastructure Automation</h4>
+          <p class="text-gray-400 mb-3">
+            Built reusable Terraform modules to automate provisioning of EC2 instances, S3 buckets, and IAM roles following Infrastructure as Code (IaC) best practices.
+          </p>
+          <a href="#" class="accent hover:underline">View on GitHub →</a>
+        </div>
+
+        <div class="card p-6">
+          <h4 class="text-xl font-semibold mb-2 text-white">Dockerized Web App</h4>
+          <p class="text-gray-400 mb-3">
+            Containerized a simple Python Flask app using Docker and deployed it on AWS EC2, including automated builds via GitHub Actions.
+          </p>
+          <a href="#" class="accent hover:underline">View on GitHub →</a>
+        </div>
+
+        <div class="card p-6">
+          <h4 class="text-xl font-semibold mb-2 text-white">CI/CD Pipeline Setup</h4>
+          <p class="text-gray-400 mb-3">
+            Implemented a CI/CD pipeline using Jenkins to automate testing and deployment of a Node.js app to AWS Elastic Beanstalk.
+          </p>
+          <a href="#" class="accent hover:underline">View on GitHub →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="max-w-4xl mx-auto text-center px-6 py-20 relative z-10">
+    <h3 class="text-2xl font-bold mb-4 accent">Let's Connect</h3>
+    <p class="text-gray-400 mb-6">I'm open to remote internships and cloud-related collaborations.</p>
+    <div class="space-x-4">
+      <a href="mailto:esther.domfeh@example.com" class="bg-[#238636] px-5 py-3 rounded-lg text-white hover:bg-[#2ea043] transition">Email Me</a>
+      <a href="https://linkedin.com/in/your-link" class="border border-gray-600 px-5 py-3 rounded-lg text-gray-300 hover:text-white transition">LinkedIn</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 border-t border-gray-800 text-gray-500 text-sm relative z-10">
+    © 2025 Esther Domfeh | Built with 🖤 using HTML, Tailwind CSS & AWS
+  </footer>
+
+  <!-- 🌟 Star Generation Script -->
+  <script>
+    const starsContainer = document.querySelector('.stars');
+    const numStars = 120;
+
+    for (let i = 0; i < numStars; i++) {
+      const star = document.createElement('div');
+      star.classList.add('star');
+      star.style.top = Math.random() * 100 + '%';
+      star.style.left = Math.random() * 100 + '%';
+      star.style.animationDelay = Math.random() * 5 + 's';
+      star.style.width = Math.random() * 2 + 1 + 'px';
+      star.style.height = star.style.width;
+      starsContainer.appendChild(star);
+    }
+  </script>
+</body>
+</html>
