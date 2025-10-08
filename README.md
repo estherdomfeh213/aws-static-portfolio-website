@@ -1,8 +1,8 @@
-# ☁️ Static Portfolio Website on AWS S3 + CloudFront
+# Static Portfolio Website on AWS S3 + CloudFront
 
 ---
 
-## 🧠 Overview
+## Overview
 This project demonstrates how to **host and distribute a static portfolio website** using **Amazon S3** and **Amazon CloudFront**.  
 It showcases fundamental AWS skills — from S3 static website hosting, permission management with IAM and bucket policies, to CDN distribution with CloudFront.
 
@@ -12,7 +12,7 @@ It focuses on building hands-on cloud experience while managing cost effectively
 
 ---
 
-## 🏗️ Architecture Diagram
+## Architecture Diagram
 ![Architecture Diagram](screenshots/aws-s3-cloudfront-architecture.png)
 
 **Architecture Summary:**
