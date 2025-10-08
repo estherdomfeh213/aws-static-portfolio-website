@@ -4,7 +4,7 @@
 
 ## Overview
 This project demonstrates how to **host and distribute a static portfolio website** using **Amazon S3** and **Amazon CloudFront**.  
-It showcases fundamental AWS skills — from S3 static website hosting, permission management with IAM and bucket policies, to CDN distribution with CloudFront.
+It showcases fundamental AWS skills, from S3 static website hosting, permission management with IAM and bucket policies, to CDN distribution with CloudFront.
 
 It was built as part of my Cloud & DevOps learning journey while preparing for the **AWS Certified Cloud Practitioner** exam.  
   
