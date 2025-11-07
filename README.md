@@ -1,6 +1,6 @@
-# 🌐 Static Portfolio Website Hosted on AWS S3
+# Static Portfolio Website Hosted on AWS S3
 
-## 📖 Project Overview
+## Project Overview
 A professional portfolio website hosted on **Amazon S3**, demonstrating cost-effective, highly available, and scalable cloud hosting solutions.
 
 ## 🎯 Live Demo
@@ -15,7 +15,7 @@ A professional portfolio website hosted on **Amazon S3**, demonstrating cost-eff
 - **Security:** IAM Bucket Policies, S3 Versioning
 - **Region:** af-south-1 (Africa Cape Town)
 
-## 📊 AWS Services & Features Used
+## AWS Services & Features Used
 
 | Service | Feature | Purpose |
 |---------|---------|---------|
@@ -24,7 +24,7 @@ A professional portfolio website hosted on **Amazon S3**, demonstrating cost-eff
 | **Amazon S3** | Versioning | Data protection & recovery |
 | **AWS IAM** | Resource Policies | Security permissions |
 
-## 🚀 Deployment Status
+## Deployment Status
 ✅ **Website Successfully Deployed**  
 ✅ **Public Access Configured**  
 ✅ **Versioning Enabled**  
