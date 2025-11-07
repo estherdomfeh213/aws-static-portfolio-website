@@ -4,7 +4,7 @@
 A professional portfolio website hosted on **Amazon S3**, demonstrating cost-effective, highly available, and scalable cloud hosting solutions.
 
 ## 🎯 Live Demo
-**Visit my live portfolio:** [http://estherdomfeh-portfolio-423.s3-website.af-south-1.amazonaws.com](http://yourname-portfolio-123.s3-website-af-south-1.amazonaws.com)
+**Visit my live portfolio:** [https://estherdomfeh-portfolio-423.s3.af-south-1.amazonaws.com/index.html]
 
 ## 🏗️ Architecture
 ![Architecture Diagram](images/architecture.png)
