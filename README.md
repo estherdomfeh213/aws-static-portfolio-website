@@ -44,10 +44,10 @@ A professional portfolio website hosted on **Amazon S3**, demonstrating cost-eff
 aws s3 mb s3://yourname-portfolio-123 --region af-south-1
 
 # Configure static website hosting
-aws s3 website s3://yourname-portfolio-123 --index-document index.html --error-document index.html
+aws s3 website s3://estherdomfeh-portfolio-423 --index-document index.html --error-document index.html
 
 # Upload files with public read access
-aws s3 sync . s3://yourname-portfolio-123 --acl public-read
+aws s3 sync . s3://estherdomfeh-portfolio-423  --acl public-read
 
 # Verify deployment
-aws s3 ls s3://yourname-portfolio-123 --recursive
+aws s3 ls s3://estherdomfeh-portfolio-423 --recursive
