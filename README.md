@@ -1,48 +1,53 @@
-# Static Portfolio Website on AWS S3 + CloudFront
+# 🌐 Static Portfolio Website Hosted on AWS S3
 
----
+## 📖 Project Overview
+A professional portfolio website hosted on **Amazon S3**, demonstrating cost-effective, highly available, and scalable cloud hosting solutions.
 
-## Overview
-This project demonstrates how to **host and distribute a static portfolio website** using **Amazon S3** and **Amazon CloudFront**.  
-It showcases fundamental AWS skills, from S3 static website hosting, permission management with IAM and bucket policies, to CDN distribution with CloudFront.
+## 🎯 Live Demo
+**Visit my live portfolio:** [http://yourname-portfolio-123.s3-website-af-south-1.amazonaws.com](http://yourname-portfolio-123.s3-website-af-south-1.amazonaws.com)
 
-It was built as part of my Cloud & DevOps learning journey while preparing for the **AWS Certified Cloud Practitioner** exam.  
-  
-It focuses on building hands-on cloud experience while managing cost effectively.
+## 🏗️ Architecture
+![Architecture Diagram](images/architecture.png)
 
----
+**Technical Stack:**
+- **Frontend:** HTML5, CSS3, JavaScript
+- **Cloud:** Amazon S3 (Static Website Hosting)
+- **Security:** IAM Bucket Policies, S3 Versioning
+- **Region:** af-south-1 (Africa Cape Town)
 
-## Architecture Diagram
-![Architecture Diagram](screenshots/aws-s3-cloudfront-architecture.png)
+## 📊 AWS Services & Features Used
 
-**Architecture Summary:**
-1. **User** requests access to the website via a browser.
-2. **Amazon CloudFront (CDN)** delivers cached website content from the nearest edge location.
-3. **Amazon S3** acts as the origin, storing static website files (HTML, CSS, JS, and images).
-4. **IAM** manages access and permissions for S3 and CloudFront.
-5. **(Optional)** **Route 53** provides DNS routing for a custom domain name.
+| Service | Feature | Purpose |
+|---------|---------|---------|
+| **Amazon S3** | Static Website Hosting | Primary website hosting |
+| **Amazon S3** | Bucket Policies | Public read access control |
+| **Amazon S3** | Versioning | Data protection & recovery |
+| **AWS IAM** | Resource Policies | Security permissions |
 
----
+## 🚀 Deployment Status
+✅ **Website Successfully Deployed**  
+✅ **Public Access Configured**  
+✅ **Versioning Enabled**  
+✅ **Cost Optimization Active**  
 
-## ⚙️ Technologies & Tools Used
+## 💰 Cost Analysis
+- **S3 Storage:** ~$0.023/GB per month
+- **Data Transfer:** ~$0.09/GB for first 10TB
+- **Requests:** ~$0.005 per 10,000 requests
+- **Estimated Monthly Cost:** **<$1.00**
 
-| Category | Tool / Service |
-|-----------|----------------|
-| Cloud Platform | Amazon Web Services (AWS) |
-| Storage | Amazon S3 |
-| CDN | Amazon CloudFront |
-| IAM Management | AWS Identity and Access Management |
-| DNS  | Amazon Route 53 |
-| CLI / Automation | AWS CLI |
-| IDE / Editor | Visual Studio Code |
-| OS | Ubuntu Linux |
+## 🔧 Technical Implementation
 
----
+### Deployment Commands (AWS CLI)
+```bash
+# Create bucket with versioning
+aws s3 mb s3://yourname-portfolio-123 --region af-south-1
 
-## 🚀 Project Setup and Implementation Steps
+# Configure static website hosting
+aws s3 website s3://yourname-portfolio-123 --index-document index.html --error-document index.html
 
-### 1️⃣ Prerequisites
-- An **AWS Free Tier account**
-- **AWS CLI** installed and configured  
-  ```bash
-  aws configure
+# Upload files with public read access
+aws s3 sync . s3://yourname-portfolio-123 --acl public-read
+
+# Verify deployment
+aws s3 ls s3://yourname-portfolio-123 --recursive
