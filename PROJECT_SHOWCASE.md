@@ -21,8 +21,3 @@
 3. **Public access requires explicit bucket policies** - security learning
 4. **Versioning protects against accidental deletions** - best practice
 
-## Interview Talking Points
-- "I reduced hosting costs by 90% using S3 static hosting vs traditional VPS"
-- "Implemented proper security through S3 bucket policies and versioning"
-- "Designed for high availability leveraging AWS's global infrastructure"
-- "Can easily scale this architecture to millions of users with CloudFront"
